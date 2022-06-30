@@ -1,0 +1,16 @@
+<%- include('includes/header'); %>
+    <div class="container">
+        <h1>
+            <% if(typeof titulo !== 'undefined') { %>
+                <%= titulo %>
+            <% } %>
+        </h1>
+        <br>
+        <form action="/" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>"><!-- necessário em todos forms da app -->
+            <label for="">Seu nome:</label>
+            <input type="text" name="nome">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+<%- include('includes/footer'); %>

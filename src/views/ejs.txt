@@ -1,0 +1,9 @@
+<% Tag 'Scriptlet', para fluxo de controle, sem saída. (if(), for())
+<%_ Tag scriptlet 'Whitespace Slurping', tira todo o espaço branco antes dele
+<%= Saídas do valor para o modelo (HTML escapou)
+<%- Produz o valor não desomes no modelo
+<%# Tag de comentário, sem execução, sem saída
+<%% Saídas um '<%' literal
+%> Tag final simples
+-%> Tag trim-mode ('newline slurp'), aparas seguindo nova linha
+_%> Tag final 'Whitespace Slurping', remove todo o espaço branco depois dele
