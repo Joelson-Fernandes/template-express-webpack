@@ -54,7 +54,7 @@ app.use(middlewareGlobal, checkCsrfError, csrfMiddleware);
 app.use(routes);
 
 app.on('connect', () => {
-    app.listen(8080, () => {
+    app.listen(8080, () => { 
         console.log('acessar http://localhost:8080');
         console.log('Servidor executado na porta 8080');
     });
